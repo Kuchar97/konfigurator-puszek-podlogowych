@@ -1,0 +1,221 @@
+{
+  "_opis": "Reguły doboru puszek. Wartości z katalogów 2026-01 – do weryfikacji przez dział techniczny. Wysokości w mm.",
+  "_wersja": "2026-09-27.7",
+  "vat": 0.23,
+  "rabatMaks": 45,
+  "email_bok": "bok@kontakt-simon.com",
+  "rekomendowane": ["KFR", "KGH", "KGT"],
+  "serieOsprzetu": {
+    "K45": { "nazwa": "K45 (45×45 mm)", "aktywna": true, "domyslna": true },
+    "S500": { "nazwa": "Simon 500", "aktywna": true, "domyslna": false },
+    "CIMA": { "nazwa": "Simon CIMA", "aktywna": false, "domyslna": false }
+  },
+  "serie": {
+    "KFR": {
+      "nazwa": "KFR",
+      "podtytul": "Regulowane puszki podłogowe, montaż poziomy modułów K45",
+      "opis": "Uniwersalna puszka z regulacją głębokości w dwóch zakresach (70–105 lub 93–128 mm). Do podłóg technicznych i – z kasetą – wylewanych. Opcjonalna nakładka ze stali nierdzewnej dla wnętrz reprezentacyjnych.",
+      "katalog": "https://ekatalog2.kontakt-simon.com.pl/download/205/2026-09-07_puszki-podlogowe-serii-kfr-2026-01-pl-v05--web-150dpi--opt.pdf",
+      "podlogi": ["wylewka", "techniczna"],
+      "wysokosc": { "wylewka": [75, 130], "techniczna": [70, 128] },
+      "wykonczenie": { "max": 5, "powyzej": "nakladka" },
+      "moduly": [2, 12],
+      "zamek": false,
+      "charakter": ["budzet", "estetyczna"],
+      "ip": "IP40", "ik": "IK08",
+      "osprzet": ["K45", "S500"],
+      "kolory": { "/1": "szary", "/14": "grafit" },
+      "glebokosci": {
+        "70": { "nazwa": "70–105 mm", "zakres": [70, 105] },
+        "93": { "nazwa": "93–128 mm", "zakres": [93, 128] }
+      },
+      "rozmiary": [
+        { "k45": 2,  "s500": 1, "obciazenie": 400,  "puszka": { "70": "KF270", "93": "KF210" }, "puszkaS500": { "70": "52050001", "93": "52050101" }, "kasetaTworzywo": "G11", "kasetaMetal": null,   "nakladka": "S105", "nakladkaInox": "KF201/8" },
+        { "k45": 4,  "s500": 2, "obciazenie": 600,  "puszka": { "70": "KF470", "93": "KF410" }, "puszkaS500": { "70": "52050002", "93": "52050102" }, "kasetaTworzywo": "G22", "kasetaMetal": null,   "nakladka": "S205", "nakladkaInox": "KF401/8" },
+        { "k45": 6,  "s500": 3, "obciazenie": 800,  "puszka": { "70": "KF670", "93": "KF610" }, "puszkaS500": { "70": "52050003", "93": "52050103" }, "kasetaTworzywo": "G33", "kasetaMetal": "G300", "nakladka": "S305", "nakladkaInox": "KF601/8" },
+        { "k45": 8,  "s500": 4, "obciazenie": 900,  "puszka": { "70": "KF870", "93": "KF810" }, "puszkaS500": { "70": "52050004", "93": "52050104" }, "kasetaTworzywo": "G44", "kasetaMetal": "G400", "nakladka": "S405", "nakladkaInox": "KF801/8" },
+        { "k45": 12, "s500": 6, "obciazenie": 1000, "puszka": { "70": "KF1270", "93": "KF1210" }, "puszkaS500": { "70": "52050006", "93": "52050106" }, "kasetaTworzywo": "G66", "kasetaMetal": "G600", "nakladka": "S605", "nakladkaInox": "KF1201/8" }
+      ],
+      "kasety": {
+        "tworzywo": { "nazwa": "Kaseta z tworzywa", "zakres": { "G11": [80, 110], "G22": [80, 110], "G33": [80, 130], "G44": [80, 130], "G66": [80, 110] } },
+        "metal": { "nazwa": "Kaseta metalowa", "zakres": { "G300": [75, 90], "G400": [75, 90], "G600": [75, 90] } }
+      },
+      "adapterS500doK45": "50012088"
+    },
+    "KGH": {
+      "nazwa": "KGH",
+      "podtytul": "Metalowe puszki podłogowe do podłóg wylewanych",
+      "opis": "Stal nierdzewna i ocynkowana, ukryta rama, obciążenie do 1200 kg, IK10. Pokrywę wypełnia się materiałem podłogi (17–20 mm). Do recepcji, sal konferencyjnych i miejsc o dużym natężeniu ruchu.",
+      "katalog": "https://ekatalog2.kontakt-simon.com.pl/download/19815/2026-09-07_metalowe-puszki-podlogowe-kgh-2026-01-pl-v05--web-150dpi--opt.pdf",
+      "podlogi": ["wylewka"],
+      "wysokosc": { "wylewka": [123, 153] },
+      "wykonczenie": { "min": 17, "max": 20 },
+      "moduly": [4, 8],
+      "zamek": false,
+      "charakter": ["estetyczna"],
+      "ip": "IP40", "ik": "IK10",
+      "osprzet": ["K45"],
+      "kolory": { "/8": "stal nierdzewna" },
+      "rozmiary": [
+        { "k45": 4, "obciazenie": 1200, "puszka": "KGH401/8", "pokrywa": "KF470/8" },
+        { "k45": 6, "obciazenie": 1200, "puszka": "KGH601/8", "pokrywa": "KF670/8" },
+        { "k45": 8, "obciazenie": 1200, "puszka": "KGH801/8", "pokrywa": "KF870/8" }
+      ]
+    },
+    "KGT": {
+      "nazwa": "KGT",
+      "podtytul": "Wodoodporne puszki IP66 do podłóg wylewanych i technicznych",
+      "opis": "IP66 przy zamkniętej pokrywie, stal inox (także zadaszone przestrzenie zewnętrzne) lub czarna (tylko wewnątrz). Gotowe wkłady z gniazdem i RJ45 albo puste pod moduły K45. Obciążenie do 1500/2000 kg.",
+      "katalog": "https://ekatalog2.kontakt-simon.com.pl/download/21418/2026-09-07_puszki-podlogowe-ip66-serii-kgt-2026-01-pl-v05--web-150dpi--opt.pdf",
+      "podlogi": ["wylewka", "techniczna"],
+      "wysokosc": { "wylewka": [81, 999], "techniczna": [81, 999] },
+      "wykonczenie": { "dowolne": true },
+      "moduly": [1, 2],
+      "zamek": true,
+      "charakter": ["budzet", "estetyczna"],
+      "ip": "IP66", "ik": "IK08",
+      "osprzet": ["K45"],
+      "kolory": { "/72": "stal inox", "/74": "czarny" },
+      "koloryTylkoWewnatrz": ["/74"],
+      "rozmiary": [
+        { "k45": 1, "nazwa": "1,5 modułu K45", "obciazenie": 1500, "puszka": { "wylewka": "KGT100", "techniczna": "KGT100RF" }, "wklad": "KFH1" },
+        { "k45": 2, "nazwa": "2,5 modułu K45", "obciazenie": 2000, "puszka": { "wylewka": "KGT200", "techniczna": "KGT200RF" }, "wklad": "KFH2" }
+      ],
+      "wkladGniazdo": { "E": "2", "F": "1", "brak": "0" },
+      "wkladDodatek": {
+        "zaslepka": { "kod": "0", "nazwa": "zaślepka 22,5×45" },
+        "keystone": { "kod": "1", "nazwa": "moduł 22,5×45 Keystone (RJ45/multimedia)" },
+        "rj45kat6": { "kod": "6U", "nazwa": "RJ45 kat. 6 UTP" },
+        "rj45kat5e": { "kod": "5U", "nazwa": "RJ45 kat. 5e UTP" }
+      },
+      "zamki": { "latwy": { "sufiks": "", "nazwa": "z ułatwionym dostępem (płaski przedmiot)" }, "imbus": { "sufiks": "SEC", "nazwa": "bezpieczny – klucz imbusowy 6" } },
+      "akcesoria": { "laczenie": "KFA1002" }
+    },
+    "FB": {
+      "nazwa": "FB",
+      "podtytul": "Puszki dla biur typu open space",
+      "opis": "Duże puszki na 8 lub 12 modułów K45 (albo 4/6 Simon 500) z pokrywą na wykończenie 5 mm lub 12 mm, opcjonalnie z zamkiem. Natywnie do podłóg technicznych, do wylewki z kasetą metalową.",
+      "katalog": "https://ekatalog2.kontakt-simon.com.pl/download/202/2026-09-07_puszki-podlogowe-serii-fb-2026-01-pl-v05--web-150dpi--opt.pdf",
+      "podlogi": ["wylewka", "techniczna"],
+      "wysokosc": { "wylewka": [70, 120], "techniczna": [85, 116] },
+      "wykonczenie": { "warianty": [5, 12] },
+      "moduly": [8, 12],
+      "zamek": true,
+      "charakter": ["budzet"],
+      "ip": "IP40", "ik": "IK08",
+      "osprzet": ["K45", "S500"],
+      "kolory": { "/1": "szary" },
+      "rozmiary": [
+        { "k45": 8,  "k45pol": 2, "s500": 4, "ramki": 2, "puszka": { "5": "FB24005/1", "12": "FB24012/1", "5z": "FB24105/1", "12z": "FB24112/1" }, "kasety": { "GFB270": [70, 100], "GFB290": [90, 120] }, "szalunek": "GFB200" },
+        { "k45": 12, "k45pol": 3, "s500": 6, "ramki": 3, "puszka": { "5": "FB34005/1", "12": "FB34012/1", "5z": "FB34105/1", "12z": "FB34112/1" }, "kasety": { "GFB370": [70, 100], "GFB390": [90, 120] }, "szalunek": "GFB300" }
+      ],
+      "ramkaK45": "FBA400/1",
+      "ramkaS500": "FBA401/1",
+      "oslona": "FBA450/1",
+      "stopki": "GFB055"
+    },
+    "KFP": {
+      "nazwa": "KFP",
+      "podtytul": "Płytkie puszki (65 mm) z kątowym montażem modułów",
+      "opis": "Tylko 65 mm głębokości – do podłóg o ograniczonej wysokości. Kątowe ustawienie gniazd ułatwia wtyczki kątowe i promienie gięcia kabli sieciowych. Wersje prostokątne i okrągła.",
+      "katalog": "https://ekatalog2.kontakt-simon.com.pl/download/203/2026-09-07_puszki-podlogowe-serii-kfp-2026-01-pl-v05--web-150dpi--opt.pdf",
+      "podlogi": ["wylewka", "techniczna"],
+      "wysokosc": { "wylewka": [55, 90], "techniczna": [65, 999] },
+      "wykonczenie": { "max": 5.5, "powyzej": "nakladka" },
+      "moduly": [4, 8],
+      "zamek": false,
+      "charakter": ["budzet"],
+      "ip": "IP40", "ik": "IK08",
+      "osprzet": ["K45"],
+      "kolory": { "/1": "szary" },
+      "rozmiary": [
+        { "k45": 4, "k45pol": 2, "ksztalt": "prostokątna", "puszka": "KF200/1",  "kaseta": "G201",  "nakladka": "S215/1" },
+        { "k45": 6, "k45pol": 3, "ksztalt": "okrągła",     "puszka": "KF300C/1", "kaseta": "G301C", "nakladka": "S315C/1" },
+        { "k45": 8, "k45pol": 4, "ksztalt": "prostokątna", "puszka": "KF400/1",  "kaseta": "G401",  "nakladka": "S415/1" }
+      ]
+    }
+  },
+  "keystone": {
+    "_opis": "Wkłady RJ45 rekomendowane do płytek z zatrzaskiem Keystone (moduły z 'keystone': true i wkłady KGT z modułem Keystone).",
+    "domyslny": "CJ645U",
+    "opcje": { "CJ645U": "kat. 6 UTP", "CJ545U": "kat. 5e UTP", "CJ645FM": "kat. 6 FTP (ekranowany)", "CJ545FM": "kat. 5e FTP (ekranowany)" },
+    "_zaslepkiUwaga": "BWB – zaślepki otworu RJ45/RJ12, potwierdzone jako właściwe do płytek K76/KB76 (2026-09-27).",
+    "zaslepkiDoWeryfikacji": false,
+    "zaslepki": { "BWB/11": "biała", "BWB/49": "czarna", "BWB/43": "srebrny mat" }
+  },
+  "rekomendowaneMokre": ["KGT", "KGH"],
+  "rekomendacjeKreatora": {
+    "_opis": "Kreator „Dobierz puszkę do potrzeb” (ustalone 2026-09-27). Bez odpowiedzi nic nie jest rekomendowane. Odpowiedzi stosowane po kolei: podłoga → wykończenie → zamek → miejsce montażu. Każda zawęża dotychczasową rekomendację; gdy ją wyklucza, decyduje nowsza odpowiedź (miejsce montażu – mycie na mokro / zewnątrz – na końcu, jako najważniejsze). Na koniec rekomendowane są tylko serie mieszczące wybraną liczbę modułów i spełniające pozostałe warunki (wysokość); jeśli żadna nie zostaje – najlepiej pasująca seria.",
+    "podloga": ["KFR"],
+    "wykonczenie": { "cienkie": ["KFR"], "12": ["FB"], "grube": ["KGH"] },
+    "zamek": ["KGT", "FB"],
+    "miejsce": { "mokre": ["KGT", "KGH"], "zewnatrz": ["KGT"] }
+  },
+  "ac11": {
+    "symbol": "AC11",
+    "_opis": "Łącznik do gniazd na szybkozłączki. Liczony jak w poprzednim konfiguratorze: n gniazd na szybkozłączki w jednym obwodzie → n−1 łączników (osobno gniazda zwykłe i DATA)."
+  },
+  "zamienniki": {
+    "_opis": "Wycofane puszki SF → nowe KFR (dane/HS_nowepuszki_KFvsSF_listing.xlsx). KFR pasuje do zamontowanych kaset G11, G22, G33, G44, G66 oraz G300, G400, G600; nakładki S105–S605 i pokrywy RSF pasują bez zmian.",
+    "SF110/1": "KF210/1", "SF110/14": "KF210/14", "SF170/1": "KF270/1", "SF170/14": "KF270/14",
+    "SF210/1": "KF410/1", "SF210/14": "KF410/14", "SF270/1": "KF470/1", "SF270/14": "KF470/14",
+    "SF310/1": "KF610/1", "SF310/14": "KF610/14", "SF370/1": "KF670/1", "SF370/14": "KF670/14",
+    "SF410/1": "KF810/1", "SF410/14": "KF810/14", "SF470/1": "KF870/1", "SF470/14": "KF870/14",
+    "SF610/1": "KF1210/1", "SF610/14": "KF1210/14", "SF670/1": "KF1270/1", "SF670/14": "KF1270/14"
+  },
+  "moduly": {
+    "_opis": "Osprzęt K45 do doboru. 'podstawowy' = pokazywany od razu; reszta w rozwijanej liście. szer: 1 = 45×45, 0.5 = 22,5×45. 'zaslepkaPolowki': do modułu dokładana jest połówka zaślepki (id modułu) – np. kabel HDMI prowadzi się pod zaślepką; razem zajmują pełne miejsce K45. 'keystone': płytka na wkłady Keystone, 'porty' = liczba wkładów.",
+    "grupy": [
+      { "id": "zasilanie", "nazwa": "Gniazda 230 V" },
+      { "id": "data", "nazwa": "Gniazda DATA (UPS)" },
+      { "id": "rj45", "nazwa": "Teleinformatyka (RJ45)" },
+      { "id": "usb", "nazwa": "Ładowarki USB" },
+      { "id": "multimedia", "nazwa": "Multimedia" },
+      { "id": "inne", "nazwa": "Zaślepki i inne" }
+    ],
+    "lista": [
+      { "id": "gn-e-szybko", "szybkozlacze": true, "grupa": "zasilanie", "baza": "K22", "nazwa": "Gniazdo 230 V z bolcem (typ E), szybkozłączki", "szer": 1, "podstawowy": true, "kolor": "/9", "domyslne": true },
+      { "id": "gn-e-sruba", "grupa": "zasilanie", "baza": "K02", "nazwa": "Gniazdo 230 V z bolcem (typ E), zaciski śrubowe", "szer": 1, "podstawowy": true, "kolor": "/9" },
+      { "id": "gn-f-szybko", "szybkozlacze": true, "grupa": "zasilanie", "baza": "K11", "nazwa": "Gniazdo 230 V Schuko (typ F), szybkozłączki", "szer": 1, "podstawowy": false, "kolor": "/9", "opcja": true },
+      { "id": "gn-f-sruba", "grupa": "zasilanie", "baza": "K01", "nazwa": "Gniazdo 230 V Schuko (typ F), zaciski śrubowe", "szer": 1, "podstawowy": false, "kolor": "/9" },
+      { "id": "data-e-szybko", "szybkozlacze": true, "grupa": "data", "baza": "KS22", "nazwa": "Gniazdo DATA (UPS) z kluczem, z bolcem (typ E), szybkozłączki", "szer": 1, "podstawowy": true, "kolor": "/6", "domyslne": true },
+      { "id": "data-e-sruba", "grupa": "data", "baza": "KS02", "nazwa": "Gniazdo DATA (UPS) z kluczem, z bolcem (typ E), zaciski śrubowe", "szer": 1, "podstawowy": true, "kolor": "/6" },
+      { "id": "data-e-sygn", "grupa": "data", "baza": "KLS02", "nazwa": "Gniazdo DATA (UPS) z kluczem i sygnalizacją napięcia, zaciski śrubowe", "szer": 1, "podstawowy": false, "kolor": "/6" },
+      { "id": "czerw-e-szybko", "szybkozlacze": true, "grupa": "data", "baza": "K22", "nazwa": "Gniazdo 230 V czerwone bez klucza, szybkozłączki", "szer": 1, "podstawowy": false, "kolor": "/6" },
+      { "id": "czerw-e-sruba", "grupa": "data", "baza": "K02", "nazwa": "Gniazdo 230 V czerwone bez klucza, zaciski śrubowe", "szer": 1, "podstawowy": false, "kolor": "/6" },
+      { "id": "data-f-szybko", "szybkozlacze": true, "grupa": "data", "baza": "K11", "nazwa": "Gniazdo Schuko (typ F) czerwone bez klucza, szybkozłączki", "szer": 1, "podstawowy": false, "kolor": "/6" },
+      { "id": "rj-2", "grupa": "rj45", "baza": "KB76", "nazwa": "Płytka 2× RJ45 z osłoną (Keystone)", "szer": 1, "porty": 2, "keystone": true, "podstawowy": true, "kolor": "/9" },
+      { "id": "rj-1", "grupa": "rj45", "baza": "K76", "nazwa": "Płytka 1× RJ45 z osłoną (Keystone)", "szer": 1, "porty": 1, "keystone": true, "podstawowy": true, "kolor": "/9" },
+      { "id": "rj-2-skos", "grupa": "rj45", "baza": "KB80", "nazwa": "Płytka 2× RJ45 skośna z osłoną (Keystone + adapter MD67)", "szer": 1, "porty": 2, "keystone": true, "adapterMD": "MD67", "podstawowy": false, "kolor": "/9" },
+      { "id": "rj-1-skos", "grupa": "rj45", "baza": "K80", "nazwa": "Płytka 1× RJ45 skośna z osłoną (Keystone + adapter MD67)", "szer": 1, "porty": 1, "keystone": true, "adapterMD": "MD67", "podstawowy": false, "kolor": "/9" },
+      { "id": "rj-1-pol", "grupa": "rj45", "baza": "KA76", "nazwa": "Płytka 1× RJ45 z osłoną 22,5×45 (Keystone)", "szer": 0.5, "porty": 1, "keystone": true, "podstawowy": false, "kolor": "/9" },
+      { "id": "rj-2-bez", "grupa": "rj45", "baza": "KB076", "nazwa": "Płytka 2× RJ45 bez osłon (Keystone)", "szer": 1, "porty": 2, "keystone": true, "podstawowy": false, "kolor": "/9" },
+      { "id": "rj-1-bez", "grupa": "rj45", "baza": "K076", "nazwa": "Płytka 1× RJ45 bez osłony (Keystone)", "szer": 1, "porty": 1, "keystone": true, "podstawowy": false, "kolor": "/9" },
+      { "id": "rj-2-panduit", "grupa": "rj45", "baza": "KB69", "nazwa": "Płytka 2× RJ45 z osłoną – Panduit", "szer": 1, "porty": 2, "podstawowy": false, "kolor": "/9" },
+      { "id": "rj-2-belden", "grupa": "rj45", "baza": "KB68", "nazwa": "Płytka 2× RJ45 z osłoną – Belden", "szer": 1, "porty": 2, "podstawowy": false, "kolor": "/9" },
+      { "id": "usb-ac65", "grupa": "usb", "baza": "K126H", "nazwa": "Ładowarka USB A+C 65 W PD QC", "szer": 1, "podstawowy": true, "kolor": "/9" },
+      { "id": "usb-ac30", "grupa": "usb", "baza": "K126J", "nazwa": "Ładowarka USB A+C 30 W PD", "szer": 1, "podstawowy": false, "kolor": "/9" },
+      { "id": "usb-ac15", "grupa": "usb", "baza": "K126F", "nazwa": "Ładowarka USB A+C 3,1 A", "szer": 1, "podstawowy": false, "kolor": "/9" },
+      { "id": "usb-2a", "grupa": "usb", "baza": "K126E", "nazwa": "Ładowarka 2× USB A 2,1 A", "szer": 1, "podstawowy": false, "kolor": "/9" },
+      { "id": "usb-c20", "grupa": "usb", "baza": "K126I", "nazwa": "Ładowarka USB C 20 W (22,5×45)", "szer": 0.5, "podstawowy": false, "kolor": "/9" },
+      { "id": "hdmi", "grupa": "multimedia", "baza": "K129C", "nazwa": "Złącze HDMI 2.0 (45×45)", "szer": 1, "podstawowy": true, "kolor": "/9" },
+      { "id": "hdmi-pol", "grupa": "multimedia", "baza": "K129B", "nazwa": "Adapter HDMI (22,5×45) + zaślepka 22,5×45 na kabel", "szer": 0.5, "zaslepkaPolowki": "zasl-pol", "podstawowy": false, "kolor": "/9" },
+      { "id": "usb-a-fl", "grupa": "multimedia", "baza": "K128C", "nazwa": "Złącze USB 3.0 typ A (F-F)", "szer": 1, "podstawowy": false, "kolor": "/9" },
+      { "id": "usb-c-fl", "grupa": "multimedia", "baza": "K128E", "nazwa": "Złącze USB 3.0 typ C (F-F)", "szer": 1, "podstawowy": false, "kolor": "/9" },
+      { "id": "vga", "grupa": "multimedia", "baza": "K100B", "nazwa": "Złącze VGA (45×45)", "szer": 1, "podstawowy": false, "kolor": "/9" },
+      { "id": "tv", "grupa": "multimedia", "baza": "K130A", "nazwa": "Gniazdo TV-SAT", "szer": 1, "podstawowy": false, "kolor": "/9" },
+      { "id": "usb-a-pol", "grupa": "multimedia", "baza": "K128B", "nazwa": "Złącze USB typ A (22,5×45)", "szer": 0.5, "podstawowy": false, "kolor": "/9" },
+      { "id": "rca2", "grupa": "multimedia", "baza": "K101B", "nazwa": "Złącze 2× RCA audio (22,5×45)", "szer": 0.5, "podstawowy": false, "kolor": "/9" },
+      { "id": "rca3", "grupa": "multimedia", "baza": "K105B", "nazwa": "Złącze 3× RCA audio-video (22,5×45)", "szer": 0.5, "podstawowy": false, "kolor": "/9" },
+      { "id": "minijack", "grupa": "multimedia", "baza": "K123B", "nazwa": "Złącze mini-jack 3,5 mm stereo (22,5×45)", "szer": 0.5, "podstawowy": false, "kolor": "/9" },
+      { "id": "svideo", "grupa": "multimedia", "baza": "K103B", "nazwa": "Złącze S-Video (22,5×45)", "szer": 0.5, "podstawowy": false, "kolor": "/9" },
+      { "id": "bnc", "grupa": "multimedia", "baza": "K102D", "nazwa": "Złącze BNC (22,5×45), do lutowania", "szer": 0.5, "podstawowy": false, "kolor": "/9" },
+      { "id": "tv-m", "grupa": "multimedia", "baza": "K120A", "nazwa": "Gniazdo TV męskie", "szer": 1, "podstawowy": false, "kolor": "/9" },
+      { "id": "xlr", "grupa": "multimedia", "baza": "K122", "nazwa": "Płytka pusta do złącz XLR", "szer": 1, "podstawowy": false, "kolor": "/9" },
+      { "id": "zasl", "grupa": "inne", "baza": "K17", "nazwa": "Zaślepka 45×45", "szer": 1, "podstawowy": true, "kolor": "/9" },
+      { "id": "zasl-pol", "grupa": "inne", "baza": "K105", "nazwa": "Zaślepka połówka", "szer": 0.5, "podstawowy": true, "kolor": "/9" },
+      { "id": "wyl-c10", "grupa": "inne", "baza": "K106A", "nazwa": "Wyłącznik nadprądowy C10A (K45)", "szer": 1, "podstawowy": false, "kolor": "/14" }
+    ],
+    "kolory": { "/9": "biały", "/14": "czarny", "/6": "czerwony", "/7": "pomarańczowy", "/27": "zielony", "/8": "aluminium" }
+  }
+}

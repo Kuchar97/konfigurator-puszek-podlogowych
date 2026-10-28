@@ -1,0 +1,22 @@
+node_modules/
+data/ustawienia.json
+data/cache-produkty.json
+data/produkty-kopia-*.json
+data/konta.json
+data/sesje.json
+data/wyceny.json
+data/powiadomienia.json
+data/poczta/
+data/uwagi.json
+data/uwagi/
+data/reguly-kopie/
+data/reguly-z-aktualizacji.json
+film/demo-app/
+film/segmenty/
+film/segmenty-sposoby/
+deploy/konfigurator.tar.gz
+# dane prywatne i pliki lokalne - nigdy na GitHub
+data/konta.json.*
+dane/
+narzedzia/
+.claude/

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Konfigurator puszek podłogowych – Kontakt-Simon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#" data-akcja="start">
+      <span class="brand-ikona" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 10h3v4H8zM13 10h3v4h-3z"/></svg>
+      </span>
+      <span>
+        <b>Konfigurator puszek</b>
+        <small id="meta-cennik">Kontakt-Simon</small>
+      </span>
+    </a>
+    <nav class="stepper" id="stepper" aria-label="Kroki konfiguracji"></nav>
+    <div class="top-akcje">
+      <button class="btn" data-akcja="oferta" id="btn-oferta">Oferta <span class="licznik" id="licznik-oferty">0</span></button>
+      <button class="btn" data-akcja="nowy">Nowy projekt</button>
+      <span id="menu-konta" class="menu-konta"></span>
+    </div>
+  </header>
+
+  <main id="app" class="app"><p class="ladowanie">Wczytywanie danych…</p></main>
+
+  <div id="druk" class="druk"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <button class="uwaga-przycisk" data-akcja="uwaga-otworz" title="Coś nie działa albo masz pomysł? Daj znać">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/><path d="M12 8v3M12 13.5h.01"/></svg>
+    <span>Zgłoś uwagę</span>
+  </button>
+  <div id="uwaga"></div>
+
+  <script src="konta.js"></script>
+  <script src="uwagi.js"></script>
+  <script src="reguly-panel.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

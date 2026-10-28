@@ -1,0 +1,23 @@
+{
+  "name": "konfigurator-puszek",
+  "version": "0.1.0",
+  "description": "Konfigurator puszek podłogowych Kontakt-Simon (prototyp)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "import": "node scripts/import-cennik.js",
+    "sprawdz": "node scripts/sprawdz-reguly.js",
+    "paczka": "powershell -ExecutionPolicy Bypass -File deploy/zrob-paczke.ps1"
+  },
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "express": "^5.2.1",
+    "nodemailer": "^10.0.11",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.12.0"
+  }
+}

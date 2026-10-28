@@ -1,0 +1,18 @@
+[Unit]
+Description=Konfigurator puszek podłogowych Kontakt-Simon
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=konfigurator
+WorkingDirectory=/opt/konfigurator
+EnvironmentFile=/etc/konfigurator.env
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target
