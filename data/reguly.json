@@ -2,7 +2,6 @@
   "_opis": "Reguły doboru puszek. Wartości z katalogów 2026-01 – do weryfikacji przez dział techniczny. Wysokości w mm.",
   "_wersja": "2026-09-27.7",
   "vat": 0.23,
-  "rabatMaks": 45,
   "email_bok": "bok@kontakt-simon.com",
   "rekomendowane": ["KFR", "KGH", "KGT"],
   "serieOsprzetu": {

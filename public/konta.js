@@ -298,9 +298,8 @@ function widokPowiadomienia() {
 }
 
 // ---------- Wycena w ofercie ----------
-// Maksymalny rabat – reguly.json → rabatMaks (domyślnie 45%)
-const rabatMaks = () => { const m = Number(typeof R !== 'undefined' && R && R.rabatMaks); return m >= 0 && m <= 100 && m ? m : 45; };
-const rabatOferty = () => Math.max(0, Math.min(rabatMaks(), Number(S.oferta.rabat) || 0));
+// Rabat wpisany w ofercie – dowolny, w zakresie 0–100%
+const rabatOferty = () => Math.max(0, Math.min(100, Number(S.oferta.rabat) || 0));
 
 function wycenaDoOferty(w) {
   S.oferta = {

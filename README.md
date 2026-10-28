@@ -26,7 +26,7 @@ Na Windows można też dwukrotnie kliknąć **`Uruchom konfigurator.bat`**.
 
 - Logowanie adresem e-mail. **Wszystkie konta są takie same** – rejestracja: e-mail, hasło, opcjonalnie imię, firma i telefon.
 - **Pierwsze założone konto zostaje jedynym administratorem** – dodatkowo widzi *Dane* (cennik, katalogi, reguły doboru, poczta), *Konta* i *Uwagi*.
-- **Rabat** każdy wpisuje sam w ofercie (maksimum: `rabatMaks` w `data/reguly.json`, domyślnie 45%); trafia do PDF i Excela (w Excelu można go nadpisać dla pojedynczej pozycji).
+- **Rabat** każdy wpisuje sam w ofercie – dowolny, od 0 do 100%, bez limitu i bez akceptacji; trafia do PDF i Excela (w Excelu można go nadpisać dla pojedynczej pozycji).
 - Wycena zapisuje się przyciskiem **Zapisz** i dostaje kod `KS-XXXX-XXXX` (otwieranie po kodzie po zalogowaniu; cudza wycena – tylko odczyt). Wyjście z oferty pyta: wróć / zapisz i wyjdź / wyjdź bez zapisywania.
 - Brak produktu na magazynie → link „Pokaż podobne dostępne” (podobne produkty z cennika ze stanem na żywo).
 - **Potwierdzenie e-maila:** po rejestracji wysyłany jest link (ważny 48 h); bez potwierdzenia nie da się zalogować. Pierwsze konto (administrator) nie wymaga potwierdzenia; administrator może potwierdzić adres ręcznie w *Konta*. Bez skonfigurowanej poczty nowe konta akceptuje administrator (dostaje powiadomienie 🔔).

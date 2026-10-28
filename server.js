@@ -279,7 +279,7 @@ app.delete('/api/import/katalog', tylkoAdmin, (req, res) => {
 // Edytowalna oferta Excel z formułą rabatu
 app.post('/api/oferta.xlsx', async (req, res) => {
   try {
-    const buf = await ofertaXlsx({ ...req.body, rabatMaks: czytaj('reguly.json', {}).rabatMaks });
+    const buf = await ofertaXlsx(req.body);
     const nazwa = bezpiecznaNazwa(`oferta_${req.body.kod || req.body.projekt || 'puszki'}.xlsx`);
     res.set({ 'Content-Type': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'Content-Disposition': `attachment; filename="${nazwa}"` });
     res.send(Buffer.from(buf));

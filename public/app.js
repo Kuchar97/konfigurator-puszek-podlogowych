@@ -1167,8 +1167,8 @@ function widokOferta() {
       <td><span class="dostepnosc" data-stan="${esc(p.symbol)}" data-potrzeba="${p.ilosc}">…</span></td>
     </tr>`).join('');
 
-  // rabat wpisuje każdy sam (maksimum: reguly.json → rabatMaks)
-  const polRabatu = `<label class="pole">Rabat <input type="number" min="0" max="${rabatMaks()}" step="0.5" data-pole="oferta.rabat" data-typ="num" value="${rab}" title="Maksymalnie ${rabatMaks()}%"> %</label>`;
+  // rabat wpisuje każdy sam – dowolny, 0–100%
+  const polRabatu = `<label class="pole">Rabat <input type="number" min="0" max="100" step="0.5" data-pole="oferta.rabat" data-typ="num" value="${rab}"> %</label>`;
   return `<section class="panel">
       <h1>Oferta</h1>
       ${panelWyceny()}
